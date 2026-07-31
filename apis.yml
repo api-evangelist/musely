@@ -1,8 +1,25 @@
 aid: musely
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/musely.png
 name: Musely
-description: 'Musely is a company surfaced as a portfolio company of dcm-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Musely is a telehealth platform, founded in 2012 by Jack Jia and Carrie Jiao and based in
+  San Jose, California, that connects patients with U.S. board-certified dermatologists for personalized,
+  prescription-strength skincare and related care. Patients share skin concerns online, physicians craft
+  personalized treatment plans, and freshly compounded formulas are shipped to the patient. Since pivoting
+  from a wellness community to prescription skincare in 2019, Musely has expanded into hair loss, hormonal/menopause
+  health, and longevity, serving more than 1.2 million patients. Musely is a consumer/health company in
+  the API Evangelist network; it operates as a direct-to-consumer web and mobile telehealth experience
+  and does not publish a public developer API, SDK, or webhook surface as of this enrichment pass.'
 url: https://raw.githubusercontent.com/api-evangelist/musely/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Consumer
+- Telehealth
+- Skincare
+- Dermatology
+- Prescription
+- Health
+- Longevity
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/musely-domain-security.yml
 - type: Website
   url: https://www.musely.com/
+- type: Support
+  url: https://support.musely.com/hc/en-us
+- type: HelpCenter
+  url: https://support.musely.com/hc/en-us
+- type: SignUp
+  url: https://www.musely.com/login
+- type: Login
+  url: https://www.musely.com/login
+- type: TermsOfService
+  url: https://www.musely.com/terms
+- type: PrivacyPolicy
+  url: https://www.musely.com/privacy
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
